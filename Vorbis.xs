@@ -2,7 +2,7 @@
 #include "perl.h"
 #include "XSUB.h"
 
-#include <../include/vorbis/vorbisfile.h>
+#include <vorbis/vorbisfile.h>
 
 typedef int Ogg__Vorbis;
 
@@ -249,78 +249,6 @@ ov_info_bitrate_lower(self)
         vorbis_info *self;
         CODE:
         RETVAL = self->bitrate_lower;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_blocksize_short(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->blocksizes[0];
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_blocksize_long(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->blocksizes[1];
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_modes(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->modes;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_maps(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->maps;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_times(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->times;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_floors(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->floors;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_residues(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->residues;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_books(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->books;
-        OUTPUT:
-        RETVAL
-
-int
-ov_info_psys(self)
-        vorbis_info *self;
-        CODE:
-        RETVAL = self->psys;
         OUTPUT:
         RETVAL
 

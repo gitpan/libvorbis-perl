@@ -1,5 +1,10 @@
 Revision history for Perl extension Ogg::Vorbis.
 
+0.03  Tue Jan 23 00:10:45 2001
+        - Removing non-existant vorbis_info functions
+        - Removing hard-coded includes
+        - Using perl5.6
+
 0.02  Tue Oct 24 00:12:56 2000
         - Basic reading/decoding works
         - initial version of pogg

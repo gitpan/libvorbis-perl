@@ -1,0 +1,17 @@
+libvorbis-perl (0.03-1) unstable; urgency=low
+
+  * Depending on Debian vorbis packages.
+  * Updated Ogg::Vorbis::Inof functions.
+  * Using Perl5.6.
+
+ -- Alex Shinn <foof@debian.org>  Tue, 23 Jan 2001 00:10:45 -0500
+
+libvorbis-perl (0.02-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Alex Shinn <foof@debian.org>  Tue, 24 Oct 2000 01:35:40 -0400
+
+Local variables:
+mode: debian-changelog
+End:
