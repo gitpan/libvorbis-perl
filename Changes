@@ -1,5 +1,8 @@
 Revision history for Perl extension Ogg::Vorbis.
 
+0.04  Thu Apr 25 10:26:42 2002
+        - Removing host_is_big_endian.  Where'd it go?
+
 0.03  Tue Jan 23 00:10:45 2001
         - Removing non-existant vorbis_info functions
         - Removing hard-coded includes

@@ -6,7 +6,7 @@
 #
 #	ANY CHANGES MADE HERE WILL BE LOST!
 #
-#   MakeMaker ARGV: (q[PREFIX=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr], q[LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/], q[INSTALLMAN1DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man1], q[INSTALLMAN3DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man3])
+#   MakeMaker ARGV: (q[PREFIX=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr], q[LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/], q[INSTALLMAN1DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man1], q[INSTALLMAN3DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man3])
 #
 #   MakeMaker Parameters:
 
@@ -61,10 +61,10 @@ INST_SCRIPT = blib/script
 PREFIX = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr
 SITEPREFIX = $(PREFIX)/local
 INSTALLDIRS = site
-INSTALLPRIVLIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/
-INSTALLARCHLIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/i386-linux
-INSTALLSITELIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/
-INSTALLSITEARCH = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/i386-linux
+INSTALLPRIVLIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/
+INSTALLARCHLIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/i386-linux
+INSTALLSITELIB = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/
+INSTALLSITEARCH = /home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/i386-linux
 INSTALLBIN = $(PREFIX)/bin
 INSTALLSCRIPT = $(PREFIX)/bin
 INSTALLSITEBIN = $(SITEPREFIX)/bin
@@ -791,7 +791,7 @@ Makefile : Makefile.PL $(CONFIGDEP)
 	-@$(RM_F) Makefile.old
 	-@$(MV) Makefile Makefile.old
 	-$(MAKE) -f Makefile.old clean $(DEV_NULL) || $(NOOP)
-	$(PERL) "-I$(PERL_ARCHLIB)" "-I$(PERL_LIB)" Makefile.PL "PREFIX=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr" "LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/" "INSTALLMAN1DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man1" "INSTALLMAN3DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man3"
+	$(PERL) "-I$(PERL_ARCHLIB)" "-I$(PERL_LIB)" Makefile.PL "PREFIX=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr" "LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/" "INSTALLMAN1DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man1" "INSTALLMAN3DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man3"
 	@echo "==> Your Makefile has been rebuilt. <=="
 	@echo "==> Please rerun the make command.  <=="
 	false
@@ -818,7 +818,7 @@ $(MAKE_APERL_FILE) : $(FIRST_MAKEFILE)
 		MAKEFILE=$(MAKE_APERL_FILE) LINKTYPE=static \
 		MAKEAPERL=1 NORECURS=1 CCCDLFLAGS= \
 		PREFIX=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr \
-		LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl5/5.005/ \
+		LIB=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/lib/perl/5.6.1/ \
 		INSTALLMAN1DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man1 \
 		INSTALLMAN3DIR=/home/foof/src/projects/libvorbis-perl-0.04/debian/tmp/usr/share/man/man3
 

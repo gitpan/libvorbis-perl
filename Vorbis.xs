@@ -175,9 +175,6 @@ ov_comment(self, link=-1)
         OUTPUT:
         RETVAL
 
-int
-host_is_big_endian()
-
 long
 ov_read(self, buffer, length, bigendianp, word, sgned, bitstream)
         OggVorbis_File* self

@@ -12,7 +12,7 @@ export DH_COMPAT=1
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
-	perl Makefile.PL PREFIX=`pwd`/debian/tmp/usr LIB=`pwd`/debian/tmp/usr/lib/perl5/5.005/ INSTALLMAN1DIR=`pwd`/debian/tmp/usr/share/man/man1 INSTALLMAN3DIR=`pwd`/debian/tmp/usr/share/man/man3
+	perl Makefile.PL PREFIX=`pwd`/debian/tmp/usr LIB=`pwd`/debian/tmp/usr/lib/perl/5.6.1/ INSTALLMAN1DIR=`pwd`/debian/tmp/usr/share/man/man1 INSTALLMAN3DIR=`pwd`/debian/tmp/usr/share/man/man3
 	touch configure-stamp
 
 build: configure-stamp build-stamp
